@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+.vscode/
+.idea/
+.gemini/
+.agent/
+video/
+*.mp4
+*.mkv
+*.avi

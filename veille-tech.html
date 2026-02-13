@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style3.css">
+    <title>Actualités Tech - Octobre 2025</title>
+    <style>
+        /* Styles pour le format site d'actualité */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 1rem 0;
+            border-bottom: 3px solid #fad867;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #fad867;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .news-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .news-header h1 {
+            font-size: 2.5rem;
+            color: #1a1a1a;
+            margin-bottom: 0.5rem;
+        }
+
+        .news-header p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .news-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .news-image {
+            height: 200px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .news-image i {
+            font-size: 4rem;
+            color: #555;
+        }
+
+        .news-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-category {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: #fad867;
+            background-color: #1a1a1a;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            align-self: flex-start;
+            margin-bottom: 0.8rem;
+        }
+
+        .news-title {
+            font-size: 1.4rem;
+            margin: 0 0 1rem 0;
+            color: #1a1a1a;
+        }
+
+        .news-excerpt {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .news-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #eee;
+            padding-top: 1rem;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .read-more {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .read-more:hover {
+            color: #fad867;
+        }
+
+        .download-section {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-download {
+            display: inline-block;
+            background-color: #1a1a1a;
+            color: #fad867;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+
+        .btn-download:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="index.html#intro">Introduction</a>
+            <a href="index.html#entreprise">Entreprise</a>
+            <a href="index.html#projets">Projets</a>
+            <a href="index.html#competences">Compétences</a>
+            <a href="veille-tech.html" class="active">Veille Tech</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="news-header">
+            <h1>Tech News <span style="color: #fad867;">Hub</span></h1>
+            <p>Les dernières innovations technologiques</p>
+        </section>
+
+        <div class="news-grid">
+            <!-- Article 1: Meta -->
+            <article class="news-card">
+                <div class="news-image" style="background: linear-gradient(45deg, #1a1a1a, #2c3e50);">
+                    <i class="fa-solid fa-glasses" style="color: #fad867;"></i>
+                </div>
+                <div class="news-content">
+                    <span class="news-category">Réalité Augmentée</span>
+                    <h2 class="news-title">Meta dévoile ses avancées sur les lunettes connectées</h2>
+                    <p class="news-excerpt">
+                        Meta continue de repousser les limites avec ses nouvelles lunettes Ray-Ban Display.
+                        L'intégration de l'IA et de l'affichage tête haute promet une révolution dans notre interaction
+                        quotidienne avec le numérique.
+                    </p>
+                    <div class="news-footer">
+                        <span><i class="fa-regular fa-calendar"></i></span>
+                        <a href="article-meta.html" class="read-more">Lire l'article <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 2: Amazon -->
+            <article class="news-card">
+                <div class="news-image" style="background: linear-gradient(45deg, #ff9900, #146eb4);">
+                    <i class="fa-solid fa-box-open" style="color: #fff;"></i>
+                </div>
+                <div class="news-content">
+                    <span class="news-category">Logistique IA</span>
+                    <h2 class="news-title">Amazon équipe ses livreurs de lunettes intelligentes</h2>
+                    <p class="news-excerpt">
+                        Pour optimiser les derniers mètres de livraison, Amazon déploie des lunettes connectées pour ses
+                        chauffeurs, facilitant la navigation et le scan des colis en temps réel.
+                    </p>
+                    <div class="news-footer">
+                        <span><i class="fa-regular fa-calendar"></i></span>
+                        <a href="article-amazon.html" class="read-more">Lire l'article <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 3: Alibaba -->
+            <article class="news-card">
+                <div class="news-image" style="background: linear-gradient(45deg, #ff5000, #ff9000);">
+                    <i class="fa-solid fa-robot" style="color: #fff;"></i>
+                </div>
+                <div class="news-content">
+                    <span class="news-category">Intelligence Artificielle</span>
+                    <h2 class="news-title">Alibaba lance Quark AI, son outil de recherche nouvelle génération</h2>
+                    <p class="news-excerpt">
+                        Alibaba entre dans la course des moteurs de recherche IA avec Quark AI, promettant des résultats
+                        plus pertinents et une compréhension contextuelle avancée pour les utilisateurs.
+                    </p>
+                    <div class="news-footer">
+                        <span><i class="fa-regular fa-calendar"></i></span>
+                        <a href="article-alibaba.html" class="read-more">Lire l'article <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+
+
+    </main>
+
+    <footer style="text-align: center; padding: 2rem; background-color: #1a1a1a; color: #888; margin-top: 3rem;">
+        <p>&copy; 2025 Djibril Kayat — Portfolio BTS SIO SISR</p>
+    </footer>
+
+</body>
+
+</html>
