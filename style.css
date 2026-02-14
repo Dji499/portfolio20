@@ -145,6 +145,7 @@ nav a.active {
     transition: 0.4s ease;
     /* Match the gold theme (#fad867) */
     filter: drop-shadow(0 0 5px rgba(250, 216, 103, 0.5));
+    transform: rotate(-90deg);
 }
 
 .home-img:hover {
@@ -154,7 +155,7 @@ nav a.active {
 }
 
 .home-img:hover img {
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(-90deg);
 }
 
 /* TYPING ANIMATION */
