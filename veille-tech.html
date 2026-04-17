@@ -18,29 +18,52 @@
         }
 
         header {
-            background-color: #1a1a1a;
+            background-color: rgba(17, 17, 17, 0.85); /* Effet verre */
+            backdrop-filter: blur(10px);
             color: #fff;
-            padding: 1rem 0;
-            border-bottom: 3px solid #fad867;
+            padding: 1.2rem 2rem;
+            margin: 0;
+            border-bottom: 1px solid rgba(250, 216, 103, 0.2);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
         }
 
         nav {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin: 0; /* IMPORTANT : annule le margin-left: auto caché de style3.css */
+            padding: 0;
+            width: 100%;
         }
 
         nav a {
-            color: #ccc;
+            margin: 0; /* Annule la marge cachée */
+            color: #eaeaea;
             text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: color 0.3s;
+            font-weight: 500;
+            font-size: 1.4rem;
+            letter-spacing: 0.5px;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px; /* Style bulle moderne */
+            transition: all 0.3s ease;
+            background: transparent;
         }
 
         nav a:hover,
         nav a.active {
-            color: #fad867;
+            color: #111;
+            background: #fad867;
+            box-shadow: 0 4px 10px rgba(250, 216, 103, 0.3);
+            transform: translateY(-2px);
         }
 
         .container {
